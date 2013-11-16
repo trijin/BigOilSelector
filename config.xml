@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.trijin.bigoilselector" version="0.3.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>BigOil Engine selector</name>
+    <description>
+        Helper for select right Fusion Engine on Day 2 in mission BigOil of PayDay 2
+    </description>
+    <author email="trijin@gmail.com">
+		trijin
+    </author>
+    <feature name="http://api.phonegap.com/1.0/device" />
+    <preference name="permissions" value="none" />
+    <preference name="orientation" value="portrait" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="false" />
+    <preference name="webviewbounce" value="true" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="true" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="disable-cursor" value="false" />
+    <preference name="android-minSdkVersion" value="7" />
+    <preference name="android-installLocation" value="auto" />
+    <preference name="splash-screen-duration" value="500" />
+    <icon src="assets/img/apple-touch-icon-precomposed.png" />
+    <icon gap:density="ldpi" gap:platform="android" src="assets/img/apple-touch-icon-precomposed.png" />
+    <icon gap:density="mdpi" gap:platform="android" src="assets/img/apple-touch-icon-precomposed.png" />
+    <icon gap:density="hdpi" gap:platform="android" src="assets/img/apple-touch-icon-72x72-precomposed.png" />
+    <icon gap:density="xhdpi" gap:platform="android" src="assets/img/apple-touch-icon-72x72-precomposed.png" />
+    <icon gap:platform="blackberry" src="assets/img/apple-touch-icon-precomposed.png" />
+    <icon gap:platform="blackberry" gap:state="hover" src="res/icon/blackberry/icon-80.png" />
+    <icon gap:platform="ios" height="57" src="assets/img/apple-touch-icon-precomposed.png" width="57" />
+    <icon gap:platform="ios" height="72" src="assets/img/apple-touch-icon-72x72-precomposed.png" width="72" />
+    <icon gap:platform="ios" height="114" src="assets/img/apple-touch-icon-114x114-precomposed.png" width="114" />
+    <icon gap:platform="ios" height="144" src="assets/img/apple-touch-icon-144x144-precomposed.png" width="144" />
+    <icon gap:platform="webos" src="assets/img/apple-touch-icon-precomposed.png" />
+    <icon gap:platform="winphone" src="assets/img/apple-touch-icon-precomposed.png" />
+    <icon gap:platform="winphone" gap:role="background" src="res/icon/windows-phone/icon-173.png" />
+    <gap:splash gap:density="ldpi" gap:platform="android" src="img/background.png" />
+    <gap:splash gap:density="mdpi" gap:platform="android" src="img/background.png" />
+    <gap:splash gap:density="hdpi" gap:platform="android" src="img/background.png" />
+    <gap:splash gap:density="xhdpi" gap:platform="android" src="img/background.png" />
+    <gap:splash gap:platform="blackberry" src="img/background.png" />
+    <gap:splash gap:platform="ios" height="480" src="assets/img/apple-touch-startup-image-320x460.png" width="320" />
+    <gap:splash gap:platform="ios" height="960" src="assets/img/apple-touch-startup-image-640x920.png" width="640" />
+    <gap:splash gap:platform="ios" height="1024" src="img/background.png" width="768" />
+    <gap:splash gap:platform="ios" height="768" src="assets/img/apple-touch-startup-image-768x1004.png" width="1024" />
+    <gap:splash gap:platform="winphone" src="img/background.png" />
+    <access origin="http://127.0.0.1*" />
+</widget>

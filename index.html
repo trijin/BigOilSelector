@@ -48,6 +48,7 @@
     };
 </script-->
 <script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/tappy.js" type="text/javascript"></script>
 
 <body>
 
@@ -171,7 +172,7 @@
 	</td>
 </tr>
 <tr>
-	<td colspan="2" align="center" onclick="resetData();" class="resetButton">
+	<td colspan="2" align="center" class="resetButton">
 		RESET
 	</td>
 </tr>
@@ -226,11 +227,17 @@
 		$('.'+type+val).addClass('active');
 		recalc();
 	}
+/*
 	$('.CanButton, .CompButton, .hydroButton').bind('click',function(){
+		var t=$(this);
+		switchButton(t.data('type'),'.'+this.className.split(' ')[0],t.data('val'));
+	});*/
+	$('.CanButton, .CompButton, .hydroButton').bind('tap',function(){
 		var t=$(this);
 		switchButton(t.data('type'),'.'+this.className.split(' ')[0],t.data('val'));
 	});
 	recalc();
+	$('.resetButton').bind('tap',resetData);
 </script>
 </body>
 <script>
