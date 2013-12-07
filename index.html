@@ -36,7 +36,7 @@
 
 <!-- <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'> -->
 <!-- <link rel="stylesheet/less" type="text/css" href="bigoil/styles.less" /> -->
-<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/style2.css" />
 <!--script type="text/javascript">
     less = {
         env: "production" // or "production"
@@ -172,7 +172,7 @@
 	</td>
 </tr>
 <tr>
-	<td colspan="2" align="center" class="resetButton">
+	<td colspan="2" align="center" onclick="resetData();" class="resetButton">
 		RESET
 	</td>
 </tr>
@@ -239,15 +239,23 @@
 	recalc();
 	$('.resetButton').bind('tap',resetData);
 </script>
+<div class="debug" style="position:absolute;bottom:20px;right:20px;font-size:15px;border:1px gray solid; cursor:pointer;height:20px;text-align:center;" onclick="showAllHeights();">resize</div>
 </body>
 <script>
-
-var CurFrame={height:$(window).height(),width:$(window).width()};
-if(630/900<CurFrame.width/CurFrame.height) {
-	$('body').css('font-size',Math.ceil(35*CurFrame.height*0.8/900)+'px');
-} else {
-	$('body').css('font-size',Math.ceil(35*CurFrame.width*0.9/630)+'px');
+<script>
+function resizeAll() {
+	var CurFrame={height:$(window).height(),width:$(window).width()};
+	var fontSize=11;
+	if(630/900<CurFrame.width/CurFrame.height) {
+		fontSize=Math.ceil(35*CurFrame.height*0.8/900);
+	} else {
+		fontSize=Math.ceil(35*CurFrame.width*0.9/630);
+	}
+	if(fontSize<15) fontSize=15;
+	$('body').css('font-size',fontSize+'px');
 }
+$(document).ready(resizeAll);
 
+resizeAll();
 </script>
 </html>

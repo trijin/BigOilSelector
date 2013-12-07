@@ -1,0 +1,101 @@
+.lab {
+	font-size: 1em;
+}
+.maintable {
+	width: 18em;
+}
+.maintable td {
+	border: 2px solid #373B44;
+	padding: 0.1em;
+}
+
+.maintable .verticalButtons td {
+	padding-bottom: 0px;
+}
+.CanButton, .hydroButton {
+	margin-bottom: 0.1em;
+	cursor: pointer;
+}
+.CanButton {
+	overflow:hidden;
+	width: 12em;
+	height: 3em;
+}
+.CanButton.active img {
+	margin-top: -6em;
+}
+.CanButton:hover img {
+	margin-top: -3em;
+}
+.hydroButton {
+	overflow:hidden;
+	width: 6em;
+	height: 3em;
+}
+.hydroButton.active img, .hydroButton:hover img, .CompButton.active img, .CompButton:hover img {
+	margin-top: -3em;
+}
+.CompButton {
+	display: inline-block;
+	overflow:hidden;
+	width: 6em;
+	height: 3em;
+	margin-right: 0.1em;
+	cursor: pointer;
+}
+.CompButton:last-of-type {
+	margin-right: 0px;
+
+}
+.resetButton {
+	font-size: 2em;
+	cursor:pointer;
+}
+.top-logo {
+	font-size: 0.5em;
+}
+.lab th {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
+.lab {
+	border:1px #373B44 solid;
+}
+.lab td b {
+	color: #373B44;
+}
+.lab td b.can {
+	color: white;
+}
+@font-face {
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  src: url(bigoil/FjallaOne.eot);
+  src: local('Fjalla One'), local('FjallaOne-Regular'), url(bigoil/FjallaOne.eot) format('embedded-opentype'), url(bigoil/FjallaOne.woff) format('woff'), url('bigoil/FjallaOne.ttf') format('truetype');;
+}
+@media only screen and (min-device-width : 320px) and (orientation : portrait) {
+	html{
+		font-size: 16px;
+	}
+}
+@media only screen and (min-width: 321px) {
+	html{
+		font-size: 24px;
+	}
+}
+@media only screen and (min-width: 500px) {
+	html{
+		font-size: 32px;
+	}
+}
+@media only screen and (min-width: 650px) and (orientation : portrait) {
+	html{
+		font-size: 40px;
+	}
+}
+@media only screen and (min-width: 850px) and (orientation : portrait) {
+	html{
+		font-size: 50px;
+	}
+}
